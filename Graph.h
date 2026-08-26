@@ -2,6 +2,8 @@
 #define GRAPH_H_INCLUDED
 
 #include "LinkedList.h"
+#include <iostream>
+using namespace std;
 
 const int MAX_USERS = 100;
 
