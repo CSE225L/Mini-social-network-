@@ -1,8 +1,6 @@
 # Member 5 Guide — Real-Time Interaction & System Integration
 
-This file documents Member 5’s work. The C++ sources have no comments; this guide is the explanation of what was built and how it fits with Members 1–4.
-
-Git does not allow a space in a branch name (`Jihanur Rahman` is rejected by `git check-ref-format`). The branch used is **`Jihanur-Rahman`**, matching the hyphen style of the other members (`Asraful-Kabir`, `Kazi-Saad-Jamil`, `Nahar-Nupur`).
+this guide is the explanation of what was built and how it fits with Members 1–4.
 
 ---
 
@@ -17,13 +15,6 @@ Git does not allow a space in a branch name (`Jihanur Rahman` is rejected by `gi
   - Member 2: template `Graph` adjacency lists, alphabetical `SortedList` friend lists, `UnsortedList` blocked users
   - Member 3: linked-list queue BFS (suggestions, degrees of separation), array-stack iterative DFS, recursive DFS communities
   - Member 4: linked-list stack chronological feed, array priority-queue trending feed, post create/like/comment/delete
-
-### Constraints respected
-
-- No `<vector>`, `<stack>`, `<queue>`, `<list>`, or `<map>`.
-- Standard BST only (no AVL, red-black, or hash maps).
-- Shortest path / degrees of separation uses **BFS only** (no Dijkstra).
-- No comments in `.h` / `.cpp` files.
 
 ---
 
@@ -185,13 +176,5 @@ Members 1–4’s branches were incomplete or did not compile as-is (mismatched 
 
 ---
 
-## How to build and run
-
-From the repo root, with MinGW `g++` on `PATH` (CodeBlocks MinGW works):
-
-```
-g++ -std=c++11 -o MiniSocial.exe User.cpp BST.cpp SortedList.cpp UnsortedList.cpp Queue.cpp Stack.cpp Member3Algorithms.cpp InboxQueue.cpp UndoStack.cpp main.cpp
-MiniSocial.exe
-```
 
 Typical flow: register a few users → login → send request → other user login → view inbox → accept → create/like posts → open chronological and trending feeds → undo.
